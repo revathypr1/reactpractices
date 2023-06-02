@@ -1,12 +1,9 @@
 import React from "react";
 
-function Counter(props) {
+function Counter() {
   return (
     <div>
-      <h1>
-        {props.title}
-        {props.count}
-      </h1>
+      <h1>Hello, I am components</h1>
     </div>
   );
 }

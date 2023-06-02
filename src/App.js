@@ -5,19 +5,15 @@ import Counter from './Components/Counter'
 
 function App() {
 
-const [count,setCount]=useState(0)
-  
-  const addcount = ()=>{
-   setCount (count+1)
-  
-  } 
+const [state,setState]=useState(false)
 
   return (
     <div>
      
-      <button onClick={addcount}>Add</button>
-      <Counter title="1st counter" count={count}/>
-      <Counter title="2nd counter" count={count}/>
+      <h1 onClick={()=>setState(!state)}>Show</h1>
+      {/* //state=false;
+      //!state=true */}
+     {state?  <Counter/> : ""} 
     </div>
   )
 }
